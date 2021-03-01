@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body{
+          font-family: sans-serif;
+        }
+
+        h1{
+          color: #0fb9b1;
+        }
+
+        #Retorno{
+          cursor: pointer;
+          outline: none;
+          box-shadow: 0 5px #999;
+          background-color:  #374045;
+          text-align: center;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          padding: 15px 32px;
+          transition-duration: 0.4s;
+
+        }
+
+
+        #Retorno:hover{
+          transform: translateY(2px);
+           box-shadow: 0 4px #999;
+          background-color:#222831;
+        }
+        .BotonR{
+          margin-top: 50px;
+          height: 100px;
+          text-align: center;
+          position: relative;
+        }
+
+        #Above{
+          background-color: #87E314 ;
+          height: 50px;
+          box-shadow: 1px 1px gray;
+          color: white;
+          font-weight: bold;
+          font-size: 25px;
+          position: relative;
+        }
+
+
+        #Titulo{
+          margin-left: 32%;
+          margin-top: 14px;
+          position: absolute;
+
+        }
+        #Imagenes1{
+          width: 720px;
+          height: 480px;
+        }
+        #Imagenes2{
+          width: 720px;
+          height: 350px;
+        }
+
+        #Imagenes3{
+          width: 300px;
+          height: 100px;
+
+        }
+
+        h1{
+          text-align: center;
+        }
+
+        .parrafos{
+          text-align: center;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div id="Above">
+      <p id="Titulo">CREACION E INSTANCIACIÓN DE CLASES</p>
+    </div>
+        <h1>Creación de la clase</h1>
+        <div class="parrafos">
+          <p>Para crear la clase simplemente le damos click derecho al icono del paquete, luego a new y finalmente a la opción JavaClass</p>
+          <img src="Crearclase.jpg" id="Imagenes1">
+          <p>Posteriormente tendremos que asignarle el nombre a la clase, dado que se esta usando POO en este caso lo llamaré Auto</p>
+          <img src="asignarNombre.jpg" id="Imagenes1">
+        </div>
+        <h1>Declaración de atributos y método</h1>
+        <div class="parrafos">
+          <p>Los atributos son las "características" de la clase creada, estas simplemente son variables, estas se pueden inicializar o no, en este
+          caso creamos los atributos color y ruedas.</p>
+          <p>Ahora el método son las cosas que la clase puede hacer, en este caso dado que es un vehículo se creo un método pitar</p>
+          <p>Para crearlo se escribe public void seguido del nombre del método o acción y finalmente los parentesis y llaves</p>
+          <img src="Atributos.jpg" id="Imagenes2">
+        </div>
+        <h1>Método constructor</h1>
+        <div class="parrafos">
+          <p>Cada vez que se cree una clase es necesario crear su método constructor para poder inicializar el objeto y validar sus valores al ser
+          instanciado</p>
+          <p>Para eso crearemos un método con el mismo nombre de la clase el cual debe tener como parametro los mismos
+          atributos creados en la clase</p>
+          <p>Dentro del método hay que igualar los parametros con los atributos, haciendo el uso de "this" para indicar el
+          atributo de la clase</p>
+          <img src="Método constructor.jpg" id="Imagenes3">
+        </div>
+        <h1>Creación de los get y set</h1>
+        <div class="parrafos">
+          <p>Como buena práctica de programación y para poder instanciar las variables de la clase es necesario crear los conocidos
+          get y set, para eso simplemente damos click derecho sobre alguna variable y nos dirigimos a la opción "Refactor" para
+          finalmente darle click a Encapsulate Fields</p>
+          <img src="refactor.jpg" id="Imagenes1">
+          <p>Luego seleccionaremos las variables a las que creemos crearle sus set y get, con lo cual al darle a refactor
+            obtendremos todo lo necesario:</p>
+          <img src="getset.jpg" id="Imagenes1">
+        </div>
+        <h1>Accediendo a los atributos y métodos</h1>
+        <div class="parrafos">
+          <p>Para poder instanciar el método y los atributos creados primero deberemos crear el "objeto" de la clase, para lo cual tendremos que escribir
+          el nombre de la clase seguido de algún nombre que nosotros queramos para finalmente igualarlo al texto "new" con el nombre de la clase:</p>
+          <img src="Instancia.jpg" id="Imagenes3">
+          <p>En el caso del método tendremos que colocar el nombre del objeto creado, un punto y finalmente el nombre del método deseado.</p>
+          <p>Para los atributos es básicamente lo mismo, el nombre, luego el punto y finalmente el get de la variable deseada</p>
+          <p>En este caso para poder mostrar el resultado se colocó la variable en un SystemOut, pero no es necesario</p>
+          <img src="InstanicasF.jpg" id="Imagenes4">
+          <p>Los resultados finales son:</p>
+          <img src="Res.jpg" id="Imagenes3">
+        </div>
+        <div class="BotonR">
+          <a href="index.html"><button type="button" id="Retorno">Menu Principal</button></a>
+        </div>
+  </body>
+</html>
